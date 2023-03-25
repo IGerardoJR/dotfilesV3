@@ -1,7 +1,4 @@
 #! /bin/sh
-
-
-
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 #bspc monitor -d I II III IV V VI VII VIII IX X
@@ -47,10 +44,7 @@ bspc config bottom_padding 3 # original 45
 
 # Autostart
 $HOME/.screenlayout/screen.sh &
-picom &
-compton --restore &
 nitrogen --restore &
-
 bash  ~/.config/polybar/candy/launch.sh &
 wmname compiz &
 mpd   &
