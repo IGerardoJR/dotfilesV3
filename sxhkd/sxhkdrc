@@ -1,4 +1,3 @@
-
 # Atajos de teclado 
 
 #Volume Control
@@ -24,7 +23,7 @@ alt + Return
 
 
 super + Return
-	kitty
+	tilix
 alt + t
 	$HOME/.config/bspwm/bspwmfloat tilix -name Float
 
@@ -46,11 +45,11 @@ alt + f
 alt + p
 	gpick -p
 
-#alt + m
-#	telegram-desktop
-
 alt + r
-	tilix -name Ranger -e ranger
+	bspc wm -r
+
+alt + q
+	bspc quit
 
 super + shift + s
 	flameshot gui
@@ -75,21 +74,8 @@ super + ctrl + p
 # xsecurelock
 super + l
 	betterlockscreen -l blur
-#	xsecurelock 
-#	XSECURELOCK_DIM_COLOR="#1a1b26" \
-#       XSECURELOCK_PASSWORD_PROMPT=emoticon \
-#       XSECURELOCK_SHOW_HOSTNAME=0 \
-#       XSECURELOCK_SHOW_USERNAME=0 \
-#       XSECURELOCK_FONT="Hack Nerd Font Mono" \
-#       xss-lock -n /usr/lib/xsecurelock/saver_xscreensaver -l -- xsecurelock
 
 
-
-
-#super + Delete
-#	i3lock-fancy
-
-# betterlockscreen -s blur
 super + alt + Delete
 	sh -c "$HOME/.config/bspwm/power"
 
@@ -105,8 +91,7 @@ super + alt + Print
 super + alt + m
 	notify-send "Now Playing ♫" "$(mpc current)"
 
-# alt + r
-	# $HOME/.config/bspwm/popup Ranger ranger
+
 
 # Balance desktop
 super + b
